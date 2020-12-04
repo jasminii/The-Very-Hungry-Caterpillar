@@ -112,7 +112,7 @@ animation-iteration-count: infinite;
 }
 
 #suncat {
-  position: absolute;
+  position: relative;
   height: 8%;
   bottom: 10%x;
   margin-left: 10%;
