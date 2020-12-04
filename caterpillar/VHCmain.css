@@ -119,6 +119,14 @@ animation-iteration-count: infinite;
   display: block;
   cursor:pointer;
 }
+#suncat {
+  position: fixed;
+  height: 8%;
+  top: 780px;
+  margin-left: 130px;
+  display: block;
+  cursor:pointer;
+}
 
 
 /*pop effect on caterpillar p2. https://ianlunn.github.io/Hover/*/
