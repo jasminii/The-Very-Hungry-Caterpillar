@@ -64,17 +64,6 @@ img {max-width: 100%;
 
 #egg {
   position: relative;
-  height: 10%;
-  top: 10%;
-  left: 480px;
-  display: block;
-  cursor:pointer;
-/*  max-width: 500px;
-  max-height: 500px;
-}*/
-
-/*#egg {
-  position: relative;
   height: 100px;
   top: 500px;
   left: 480px;
@@ -83,7 +72,7 @@ img {max-width: 100%;
   max-width: 500px;
   max-height: 500px;
 }
-*/
+
 .shake:hover {
 animation: shake 0.5s;
 animation-iteration-count: infinite;
