@@ -1,4 +1,5 @@
-/*test*/
+/*COVER PAGE*/
+/*center title n author*/
 html, body {margin:0;
             height: 100%;
             font-size:40px;
@@ -6,9 +7,9 @@ html, body {margin:0;
             color: black;
             font-family: Garamond, serif;}  
             }
-p {
+/*p {
   margin-left: 20px;
-}
+}*/
 
 img {max-width: 100%;
     }
@@ -25,7 +26,6 @@ img {max-width: 100%;
   top: 50px;
   left: 50px;
   }
-
 
 #start {
   position: absolute;
@@ -63,14 +63,12 @@ img {max-width: 100%;
 }
 
 #egg {
-  position: relative;
-  height: 100px;
-  top: 500px;
-  left: 480px;
+  position: absolute;
+  height: 11%;
+  bottom: 40%;
+  left: 25%;
   display: block;
   cursor:pointer;
-  max-width: 500px;
-  max-height: 500px;
 }
 
 .shake:hover {
@@ -101,10 +99,10 @@ animation-iteration-count: infinite;
 }
 
 #suncat {
-  position: fixed;
-  height: 8%;
-  top: 780px;
-  margin-left: 130px;
+  position: absolute;
+  height: 10%;
+  bottom: 8.5%;
+  margin-left: 6%;
   display: block;
   cursor:pointer;
 }
@@ -149,24 +147,17 @@ animation-iteration-count: infinite;
 
 #title3 {
   position: absolute;
-  bottom: 70px;
-  left: 50px;
+  bottom: 7%;
+  left: 5%;
   color:black;
 }
 
-#textfood {
-  position: absolute;
-  bottom: 60px;
-  left: 7px;
-  margin-left:50px;
-  color:black;
-}
 
 #catsun {
-  position: fixed;
-  height: 23%;
-  bottom: 18px;
-  left: 720px;
+  position: absolute;
+ /* height: 23%;*/
+  bottom: 1.5%;
+  left: 37%;
   display: block;
   cursor:pointer;
 }
@@ -242,38 +233,124 @@ animation-iteration-count: infinite;
   animation-iteration-count: infinite;
 }
 
-
 /*#suncat {
     opacity: 0;
     transition: opacity 2s ease-in-out 5s;
 }
 */
-.p4, .p5 {
+
+/*PAGE 4................................*/
+#vhc4, #vhc5, #vhc6, #vhc7, #vhc8, #vhc9 {
   display: block;
   margin-left: auto;
   margin-right: auto;
   top: 100px;
   text-align: center;
+  align-items: center;
 }
+/*
+#title4 {
+  position: absolute;
+  bottom: 50px;
+  left: auto;
+  right: auto;
+}*/
 
 
-/*PAGE 4................................*/
-#apple, #catapple {
+/*#apple, #catapple {
+  top: 100px;
+}
+*/
+
+
+/*PAGE 5................................*/
+
+#vhc5 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  top: 100px;
+  text-align: center;
   align-items: center;
 }
 
 
-
-/*PAGE 5................................*/
-.pears {
-  display:none;
+/*PAGE 6................................*/
+#vhc6 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  top: 100px;
+  text-align: center;
+  align-items: center;
 }
 
-#pear1 {
+.plums {
+  display:none;
+  float: left; /*this makes the images repeat in line, not appear random on page*/
+}
+
+#plum1 {
     display:block;
 }
 
-.pearContain {
+.plumContain {
   display:grid;
-  grid-template-columns: repeat(3,1fr)
+  grid-template-columns: repeat(3,1fr);
+}
+
+/*PAGE 7................................*/
+.straws {
+  display:none;
+  float: left;
+}
+
+#straw1 {
+    display:block;
+}
+
+.strawContain {
+  display:flex;
+  grid-template-columns: repeat(4,1fr);
+
+}
+
+/*PAGE 8................................*/
+.oranges {
+  display:none;
+  float: left;
+}
+
+#orange1 {
+    display:block;
+}
+
+.orangeContain {
+  display:flex;
+  grid-template-columns: repeat(5,1fr);
+
+}
+
+/*PAGE 9................................*/
+.foods {
+  display:none;
+  float: left;
+  max-width: 100px;
+}
+
+#food1 {
+    display:block;
+    left: 50px;
+}
+
+.foodContain {
+  display:grid;
+  grid-template-columns: repeat(9,1fr);
+  align-items: center;
+}
+
+#title99 {
+  position:absolute;
+  bottom:50px;
+  right:50px;
 }
