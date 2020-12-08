@@ -1,5 +1,4 @@
-/*COVER PAGE*/
-/*center title n author*/
+/*applied to everyhting.....................*/
 html, body {margin:0;
             height: 100%;
             font-size:40px;
@@ -7,13 +6,35 @@ html, body {margin:0;
             color: black;
             font-family: Garamond, serif;}  
             }
-/*p {
-  margin-left: 20px;
-}*/
 
 img {max-width: 100%;
     }
 
+#title {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  }
+
+/* http://waitanimate.wstone.io/#!/ https://codepen.io/dmytrous/pen/vgoWxY*/
+/*.shakeDelay {
+  
+  animation: shakeDelay-animation 4.72s ease infinite; 
+  transform-origin: 50% 50%;
+  animation-delay: 5s; 
+}
+
+@keyframes shakeDelay-animation {
+   0% { transform:translate(0,0) }
+  1.78571% { transform:translate(5px,0) }
+  3.57143% { transform:translate(0,0) }
+  5.35714% { transform:translate(5px,0) }
+  7.14286% { transform:translate(0,0) }
+  8.92857% { transform:translate(5px,0) }
+  10.71429% { transform:translate(0,0) }
+  100% { transform:translate(0,0) }
+}
+*/
 
 /*COVER.................................*/
 #cover {
@@ -21,11 +42,6 @@ img {max-width: 100%;
   background-size:cover; 
 }
 
-#title {
-  position: absolute;
-  top: 50px;
-  left: 50px;
-  }
 
 #start {
   position: absolute;
@@ -36,22 +52,6 @@ img {max-width: 100%;
   font-family: Garamond, Serif;
   cursor:pointer;
   }
-
-
-/*new stuff*/
-.cat {
-  display:none;
-}
-
-#cat1 {
-    display:block;
-}
-
-.catContain {
-  display:grid;
-  grid-template-columns: repeat(6,1fr)
-}
-/*then in html u will have <div class="catContain">  to contain all ur fruits to be in the grid*/
 
 
 /*PAGE 1...........................*/
@@ -138,6 +138,7 @@ animation-iteration-count: infinite;
   -webkit-animation-iteration-count: 1;
   animation-iteration-count: 1;
 }
+
 
 /*PAGE 3...............................*/
 #vhc3 {
@@ -233,65 +234,41 @@ animation-iteration-count: infinite;
   animation-iteration-count: infinite;
 }
 
-/*#suncat {
-    opacity: 0;
-    transition: opacity 2s ease-in-out 5s;
-}
-*/
-
 /*PAGE 4................................*/
-#vhc4, #vhc5, #vhc6, #vhc7, #vhc8, #vhc9 {
+#vhc4, #vhc5, #vhc6, #vhc7, #vhc8, #vhc9, #vhc11, #bigcat2, #cocoon2{
   display: block;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 100px;
   top: 100px;
   text-align: center;
   align-items: center;
 }
-/*
-#title4 {
-  position: absolute;
-  bottom: 50px;
-  left: auto;
-  right: auto;
-}*/
 
-
-/*#apple, #catapple {
-  top: 100px;
+#apple {
+  cursor: pointer;
 }
-*/
-
 
 /*PAGE 5................................*/
 
-#vhc5 {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  top: 100px;
-  text-align: center;
-  align-items: center;
+.pears {
+  cursor: pointer;
 }
 
+#catpear {
+  cursor: pointer;
+}
 
 /*PAGE 6................................*/
-#vhc6 {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  top: 100px;
-  text-align: center;
-  align-items: center;
-}
 
 .plums {
   display:none;
   float: left; /*this makes the images repeat in line, not appear random on page*/
+  cursor: pointer;
 }
 
 #plum1 {
-    display:block;
+  display:block;
 }
 
 .plumContain {
@@ -303,10 +280,11 @@ animation-iteration-count: infinite;
 .straws {
   display:none;
   float: left;
+  cursor: pointer;
 }
 
 #straw1 {
-    display:block;
+  display:block;
 }
 
 .strawContain {
@@ -319,38 +297,181 @@ animation-iteration-count: infinite;
 .oranges {
   display:none;
   float: left;
+  cursor: pointer;
 }
 
 #orange1 {
-    display:block;
+  display:block;
 }
 
 .orangeContain {
   display:flex;
   grid-template-columns: repeat(5,1fr);
-
 }
 
 /*PAGE 9................................*/
 .foods {
   display:none;
-  float: left;
+  float: center;
   max-width: 100px;
-}
+  cursor: pointer;
+ }
 
 #food1 {
-    display:block;
-    left: 50px;
+  display:block;
+  float: center;
+  max-width: 100px;
 }
 
 .foodContain {
   display:grid;
-  grid-template-columns: repeat(9,1fr);
+  grid-template-columns: repeat(10,1fr);
   align-items: center;
 }
 
 #title99 {
   position:absolute;
-  bottom:50px;
-  right:50px;
+  width:50%;
+  height:50%;
+  bottom: 0px;
+  left: 50%; 
+  margin-left:-25%;
 }
+
+
+/*.texts {
+  display:none;
+  float: left;
+  max-width: 100px;
+}
+
+#text1 {
+    display:block;
+    left: 50px;
+}
+*/
+
+
+/*PAGE 10................................*/
+#vhc10 {
+  background:url("../images/leaf.png");
+  background-size:cover; 
+}
+
+#title10 {
+  position: absolute;
+  bottom: 30%;
+  left: 45%;
+  display:block;
+  max-width: 33%;  
+}
+
+.holeContain {
+  position: absolute;
+  bottom: 30%;
+  left: 5%;
+}
+
+.holes {
+  padding-right: 120px;
+  cursor: pointer;
+}
+
+#catleaf {
+  position: absolute;
+  height: 8%;
+  top: 28%;
+  right: 28%;
+  display:block;
+  cursor: pointer;
+}
+
+/*PAGE 11................................*/
+#bigcat, #cocoon  {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+  bottom: -250%;
+  cursor: pointer;
+}
+
+
+/*hover grow effect on caterpillar p11 https://ianlunn.github.io/Hover*/
+.hvr-grow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 3.3s;
+  transition-duration: 3.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+  -webkit-transform: scale(1.7);
+  transform: scale(1.7);
+}
+
+#title111 {
+  position:absolute;
+  width:50%;
+  height:50%;
+  bottom: -100px;
+  left: 50%; 
+  margin-left: -25%;
+}
+
+/*PAGE 12................................*/
+#bigcat2, #cocoon2  {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  top: 10px;
+  cursor: pointer;
+}
+
+#title12 {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+}
+/*PAGE 13................................*/
+/*.multicolortext {
+  background-image: linear-gradient(to left, violet, indigo, green, blue, yellow, orange, red);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}*/
+
+/*#butterfly{
+  position: absolute;
+  right:0px;
+  height: 100%;
+  vertical-align: center;
+}*/
+
+#title13 {
+  position: absolute;
+  top: 50px;
+  left: 50px;;
+  max-width: 100%
+}
+
+
+#butterfly {
+  vertical-align: center;
+  position: absolute
+}
+
+/*PAGE 14................................*/
+#vhc14 {
+  background:url("../images/dots.png");
+  background-size:cover;  
+}
+
+#title14 { font-size: 250px; display: block; margin-left: auto; margin-right:
+auto; top: 555px; text-align: center; position: relative;

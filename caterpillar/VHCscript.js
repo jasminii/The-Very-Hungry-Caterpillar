@@ -56,7 +56,7 @@ $("#pear1").click(function(){
 
 // replace pear2 with catpear
 $("#pear2").click(function(){
-	$("#catpear").fadeIn(500)
+	$("#catpear").fadeIn(0)
 	$("#pear2").fadeOut(0)
 })
 
@@ -78,7 +78,7 @@ $(".plums").click(function(){						//When you click on anything with the class "
 });
 
 $("#plum3").click(function(){
-	$("#plum4").fadeIn(500)
+	$("#plum4").fadeIn(0)
 	$("#plum3").fadeOut(0)
 })
 
@@ -100,7 +100,7 @@ $(".straws").click(function(){
 });
 
 $("#straw4").click(function(){
-	$("#straw5").fadeIn(500)
+	$("#straw5").fadeIn(0)
 	$("#straw4").fadeOut(0)
 })
 
@@ -122,7 +122,7 @@ $(".oranges").click(function(){
 });
 
 $("#orange5").click(function(){
-	$("#orange6").fadeIn(500)
+	$("#orange6").fadeIn(0)
 	$("#orange5").fadeOut(0)
 })
 
@@ -144,20 +144,98 @@ $(".foods").click(function(){
 	$(foodNumber).fadeIn(500)
 });
 
+// testing food n text appearance
+// $(".foods").click(function(){						
+// 	textNumber = $(this).attr("id")					
+// 	textNumber = textNumber.replace("text","")		
+// 	textNumber = parseInt(textNumber)				
+// 	textNumber = textNumber+1;						
+// 	textNumber = "#text"+textNumber 				
+
+// 	$(textNumber).fadeIn(500)
+// });
+
+
+// $("#food9").click(function(){
+// 	$("#food10, #title99").fadeIn('slow')
+// 	// $("#food9").fadeOut(0)
+// });
+
 $("#food9").click(function(){
-	$("#food10, #title99").fadeIn(500)
-	// $("#food9").fadeOut(0)
-})
+	$("#food10").fadeIn(500)
+	$("#textContain").fadeOut(500)
+	$("#title99").fadeIn(1000)
+});
 
 
 $("#food10").click(function(){
     window.location.href="vhc10.html"
 });
+$('#catleaf, #hole2, #hole3').hide();
+
+//page 10..........................................
+// $(".holes").click(function(){						
+// 	holeNumber = $(this).attr("id")					
+// 	holeNumber = holeNumber.replace("hole","")		
+// 	holeNumber = parseInt(holeNumber)				
+// 	holeNumber = holeNumber+1;						
+// 	holeNumber = "#hole"+holeNumber 				
+
+// 	$(holeNumber).fadeIn(500)
+// });
+
+$("#hole1").click(function(){
+	$("#hole2").fadeIn(500)
+})
+
+$("#hole2").click(function(){
+	$("#hole3").fadeIn(500)
+})
+
+$("#hole3").click(function(){
+	$("#catleaf").fadeIn(1000)
+})
 
 
+$("#catleaf").click(function(){
+    window.location.href="vhc11.html"
+});
 
 
+//page 11..........................................
+// $('#cocoon').hide();
+// $("#bigcat").click(function(){
+// 	$("#cocoon").fadeIn(2000)
+// 	$("#bigcat").fadeOut(2000)
+		
+// })
 
+$("#bigcat").click(function(){
+    window.location.href="vhc12.html"
+});
+
+
+//page 12..........................................
+$('#cocoon2').hide();
+$("#bigcat2").click(function(){
+	$("#cocoon2").fadeIn(5000)
+	// $("#bigcat2").fadeOut(400)
+		
+})
+
+$("#cocoon2").click(function(){
+    window.location.href="vhc13.html"
+});
+
+
+//page 13..........................................
+// $('#butterfly').hide();
+$('#butterfly').animate({right:'500px', left: '0px'},2000)
+
+
+$("#butterfly").click(function(){
+    window.location.href="vhc14.html"
+});
 
 
 
