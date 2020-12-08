@@ -219,7 +219,7 @@ $("#bigcat").click(function(){
 $('#cocoon2').hide();
 $("#bigcat2").click(function(){
 	$("#cocoon2").fadeIn(5000)
-	// $("#bigcat2").fadeOut(400)
+	$("#bigcat2").fadeOut(400)
 		
 })
 
