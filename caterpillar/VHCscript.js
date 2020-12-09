@@ -164,14 +164,15 @@ $(".foods").click(function(){
 $("#food9").click(function(){
 	$("#food10").fadeIn(500)
 	$("#textContain").fadeOut(500)
-	$("#title99").fadeIn(1000)
+	$("#title99").fadeIn(2000)
 });
 
 
 $("#food10").click(function(){
     window.location.href="vhc10.html"
 });
-$('#catleaf, #hole2, #hole3').hide();
+$('#catleaf, #hole1, #hole2, #hole3').hide();
+$("#hole1").fadeIn(2000)
 
 //page 10..........................................
 // $(".holes").click(function(){						
@@ -193,7 +194,7 @@ $("#hole2").click(function(){
 })
 
 $("#hole3").click(function(){
-	$("#catleaf").fadeIn(1000)
+	$("#catleaf").fadeIn(2000)
 })
 
 
@@ -226,17 +227,50 @@ $("#bigcat2").click(function(){
 $("#cocoon2").click(function(){
     window.location.href="vhc13.html"
 });
+// $('#butterfly').hide();
 
 
 //page 13..........................................
-// $('#butterfly').hide();
-$('#butterfly').animate({right:'500px', left: '0px'},2000)
 
+$('#butterfly').animate({right:'50px', left:'0px'},2000)
 
 $("#butterfly").click(function(){
     window.location.href="vhc14.html"
 });
 
+
+//page 14..........................................
+$('#restart1').hide();
+	$("#restart1").fadeIn(3000)
+
+$(document).ready(function() {
+        $( "#restart1" ).mouseover(function(){
+            $(this).attr("src", "../images/restart.png");
+        });
+
+        $( "#restart1" ).mouseout(function(){
+            $(this).attr("src", "../images/restart grey.png");
+        });
+    });
+
+
+$("#restart1").click(function(){
+    window.location.href="index.html"
+});
+
+
+
+
+// $('#restart2').hide();
+// $("#restart1").hover(function(){
+// 	$("#restart2").fadeIn(0)
+// 	$("#restart1").fadeOut(0)
+// })
+// $("#restart1").hover(function(){
+//   $(this).replace("restart2");
+//   }, function(){
+//   // $(this).replace("color", "white");
+// });
 
 
 

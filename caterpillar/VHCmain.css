@@ -4,8 +4,9 @@ html, body {margin:0;
             font-size:40px;
             background: white;
             color: black;
-            font-family: Garamond, serif;}  
-            }
+            font-family: Garamond, serif;
+            /*overflow-y:hidden; */
+                        }
 
 img {max-width: 100%;
     }
@@ -17,7 +18,7 @@ img {max-width: 100%;
   }
 
 /* http://waitanimate.wstone.io/#!/ https://codepen.io/dmytrous/pen/vgoWxY*/
-/*.shakeDelay {
+.shakeDelay {
   
   animation: shakeDelay-animation 4.72s ease infinite; 
   transform-origin: 50% 50%;
@@ -34,7 +35,7 @@ img {max-width: 100%;
   10.71429% { transform:translate(0,0) }
   100% { transform:translate(0,0) }
 }
-*/
+
 
 /*COVER.................................*/
 #cover {
@@ -101,7 +102,7 @@ animation-iteration-count: infinite;
 #suncat {
   position: absolute;
   height: 10%;
-  bottom: 8.5%;
+  bottom: 10.5%;
   margin-left: 6%;
   display: block;
   cursor:pointer;
@@ -235,7 +236,7 @@ animation-iteration-count: infinite;
 }
 
 /*PAGE 4................................*/
-#vhc4, #vhc5, #vhc6, #vhc7, #vhc8, #vhc9, #vhc11, #bigcat2, #cocoon2{
+#vhc4, #vhc5, #vhc6, #vhc7, #vhc8, #vhc9, #vhc11, #bigcat2, #cocoon2 {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -243,6 +244,8 @@ animation-iteration-count: infinite;
   top: 100px;
   text-align: center;
   align-items: center;
+  overflow: hidden;
+
 }
 
 #apple {
@@ -260,7 +263,6 @@ animation-iteration-count: infinite;
 }
 
 /*PAGE 6................................*/
-
 .plums {
   display:none;
   float: left; /*this makes the images repeat in line, not appear random on page*/
@@ -273,6 +275,8 @@ animation-iteration-count: infinite;
 
 .plumContain {
   display:grid;
+  margin:2em auto;
+  max-width: 1290px;
   grid-template-columns: repeat(3,1fr);
 }
 
@@ -288,7 +292,9 @@ animation-iteration-count: infinite;
 }
 
 .strawContain {
-  display:flex;
+  display:grid;
+  margin:2em auto;
+  max-width: 1720px;
   grid-template-columns: repeat(4,1fr);
 
 }
@@ -305,32 +311,41 @@ animation-iteration-count: infinite;
 }
 
 .orangeContain {
-  display:flex;
+  display:grid;
+  margin:2em auto;
+  max-width: 1500px;
   grid-template-columns: repeat(5,1fr);
 }
 
 /*PAGE 9................................*/
 .foods {
+  position: relative;
   display:none;
-  float: center;
-  max-width: 100px;
+  max-width: 100%;
   cursor: pointer;
  }
 
 #food1 {
-  display:block;
-  float: center;
+  display:block;  
   max-width: 100px;
 }
 
 .foodContain {
+  position: static;
   display:grid;
-  grid-template-columns: repeat(10,1fr);
-  align-items: center;
+  margin:2em auto;
+  max-width: 1520px;
+  grid-template-columns: repeat(10,1fr);  
+}
+
+.textContain {
+  display:grid;
+  margin: auto;
+  max-width: 1500px;
 }
 
 #title99 {
-  position:absolute;
+  position:relative;
   width:50%;
   height:50%;
   bottom: 0px;
@@ -339,7 +354,9 @@ animation-iteration-count: infinite;
 }
 
 
-/*.texts {
+
+
+/*.texts {  
   display:none;
   float: left;
   max-width: 100px;
@@ -379,23 +396,24 @@ animation-iteration-count: infinite;
 
 #catleaf {
   position: absolute;
-  height: 8%;
-  top: 28%;
+  max-width:100%;
+  top: 29.5%;
   right: 28%;
   display:block;
   cursor: pointer;
 }
 
 /*PAGE 11................................*/
-#bigcat, #cocoon  {
+#bigcat  {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 20%;
-  bottom: -250%;
+  margin: 2em auto;
+  max-width: 980px;
+  margin-top: 130px;
+  
+/*  width: 20%;*/
+  
   cursor: pointer;
 }
-
 
 /*hover grow effect on caterpillar p11 https://ianlunn.github.io/Hover*/
 .hvr-grow {
@@ -418,25 +436,37 @@ animation-iteration-count: infinite;
   position:absolute;
   width:50%;
   height:50%;
-  bottom: -100px;
+  bottom: -200px;
   left: 50%; 
-  margin-left: -25%;
+  margin-left:-25%;
 }
 
 /*PAGE 12................................*/
+/*#bigcat2, #cocoon2  {
+  display: block;
+  margin: 2em auto;
+  max-width: 980px;
+  margin-top: 130px;
+  cursor: pointer;
+}
+*/
+
 #bigcat2, #cocoon2  {
+  display: block;
+  margin: 2em auto;
+  max-width: 980px;
+  margin-top: 100px;
+}
+
+
+
+#title12 {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 40%;
-  top: 10px;
-  cursor: pointer;
-}
-
-#title12 {
-  position: absolute;
-  top: 50px;
-  left: 50px;
+  margin-top: 100px;
+  top: 100px;
+  text-align: center;
 }
 /*PAGE 13................................*/
 /*.multicolortext {
@@ -447,25 +477,24 @@ animation-iteration-count: infinite;
   color: transparent;
 }*/
 
-/*#butterfly{
-  position: absolute;
-  right:0px;
-  height: 100%;
-  vertical-align: center;
-}*/
+#vhc13 {
+  overflow: hidden;
+}
 
 #title13 {
   position: absolute;
   top: 50px;
-  left: 50px;;
-  max-width: 100%
+  left: 50px;  
 }
 
 
 #butterfly {
   vertical-align: center;
-  position: absolute
+  position: absolute;
+  max-width: 1500px;
+  margin-left: 400px;
 }
+
 
 /*PAGE 14................................*/
 #vhc14 {
@@ -473,5 +502,20 @@ animation-iteration-count: infinite;
   background-size:cover;  
 }
 
-#title14 { font-size: 250px; display: block; margin-left: auto; margin-right:
-auto; top: 555px; text-align: center; position: relative;
+#title14 { 
+font-size: 250px; 
+display: block; 
+margin-left: auto; 
+margin-right:
+auto; top: 555px; 
+text-align: center;
+position: relative;
+}
+
+
+#restart1 {
+  position: absolute;
+  margin-left:50%;
+  margin-top: 100px;
+ 
+}
