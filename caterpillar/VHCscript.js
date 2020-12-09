@@ -1,5 +1,3 @@
-
-
 // change click to start font colour on hover
 $("#start").hover(function(){
   $(this).css("color", "#ed0707ff");
