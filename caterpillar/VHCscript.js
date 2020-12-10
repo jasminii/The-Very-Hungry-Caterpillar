@@ -1,8 +1,9 @@
+//cover..........................................
 // change click to start font colour on hover
 $("#start").hover(function(){
   $(this).css("color", "#ed0707ff");
   }, function(){
-  $(this).css("color", "white");
+  $(this).css("color", "#d9ead3");
 });
 
 // // click start to next page
@@ -10,7 +11,7 @@ $("#start").click(function(){
     window.location.href="vhc1.html"
 });
 
-
+//page 1..........................................
 // click egg to p2
 $("#egg").click(function(){
     window.location.href="vhc2.html";
@@ -19,13 +20,13 @@ $("#egg").click(function(){
 $('#suncat').hide(); // hides the div aka suncat
 $('#suncat').delay(2000).fadeIn('fast'); //suncat appears
 
-
-
+//page 2..........................................
 // click caterpillar to p3
 $("#suncat").click(function(){
     window.location.href="vhc3.html"
 });
 
+//page 3..........................................
 // click to p4
 $("#catsun").click(function(){
     window.location.href="../caterpillar/vhc4.html"
@@ -41,8 +42,7 @@ $("#apple").click(function(){
 
 // click to p5 
 $("#catapple").click(function(){
-    window.location.href="vhc5.html";
-});
+    window.location.href="vhc5.html";});
 
 
 //page 5..........................................
@@ -173,16 +173,6 @@ $('#catleaf, #hole1, #hole2, #hole3').hide();
 $("#hole1").fadeIn(2000)
 
 //page 10..........................................
-// $(".holes").click(function(){						
-// 	holeNumber = $(this).attr("id")					
-// 	holeNumber = holeNumber.replace("hole","")		
-// 	holeNumber = parseInt(holeNumber)				
-// 	holeNumber = holeNumber+1;						
-// 	holeNumber = "#hole"+holeNumber 				
-
-// 	$(holeNumber).fadeIn(500)
-// });
-
 $("#hole1").click(function(){
 	$("#hole2").fadeIn(500)
 })
@@ -202,12 +192,11 @@ $("#catleaf").click(function(){
 
 
 //page 11..........................................
-// $('#cocoon').hide();
-// $("#bigcat").click(function(){
-// 	$("#cocoon").fadeIn(2000)
-// 	$("#bigcat").fadeOut(2000)
-		
-// })
+$('#title111').hide();
+$("#bigcat").hover(function(){
+	$("#title111").fadeIn(2800)
+})
+
 
 $("#bigcat").click(function(){
     window.location.href="vhc12.html"
@@ -216,17 +205,14 @@ $("#bigcat").click(function(){
 
 //page 12..........................................
 $('#cocoon2').hide();
-$("#bigcat2").click(function(){
+$("#bigcat2").hover(function(){
 	$("#cocoon2").fadeIn(5000)
-	$("#bigcat2").fadeOut(400)
-		
+	$("#bigcat2").fadeOut(3500)		
 })
 
 $("#cocoon2").click(function(){
     window.location.href="vhc13.html"
 });
-// $('#butterfly').hide();
-
 
 //page 13..........................................
 
@@ -257,57 +243,3 @@ $("#restart1").click(function(){
 });
 
 
-
-
-// $('#restart2').hide();
-// $("#restart1").hover(function(){
-// 	$("#restart2").fadeIn(0)
-// 	$("#restart1").fadeOut(0)
-// })
-// $("#restart1").hover(function(){
-//   $(this).replace("restart2");
-//   }, function(){
-//   // $(this).replace("color", "white");
-// });
-
-
-
-
-
-
-
-
-
-// to make each class fruit appear on page in the defined grid after each click :( everytime i use this the whole js breaks!!!!
-// $(".pears").click(function(){
-// 	pearNumber = "#pears"+(parseInt($(this).attr("id").replace("pears",""))+1)$(pearsNumber.fadeIn(500))
-// });
-
-// ...........................................
-// // this was take 1//
-// $("#start").click(function(){
-//     $("#start, #cover").fadeOut(200);
-//     $("#p1").fadeIn(200);
-// });
-
-// $("#p1").click(function(){
-//     $("#p1").fadeOut(200);
-//     $("#p2").fadeIn(200);
-// });
-
-// // this was take 2//
-// $(".start").click(function(){
-
-
-// 	if ($(this).hasClass("start")) { //this menu is already open
-// 		$(this).removeClass("start") //remove the "open" class 
-// 	} else {
-// 		$(this).addClass("p1") //add the "open" class
-// 	}
-// })
-
-
-// // to make each class fruit appear on page in the defined grid after each click
-// $(".cat").click(function(){
-// 	catNumber = "#cat"+(parseInt($(this).attr("id").replace("cat".""))+1)$(catNumber.fadeIn(500))
-// });
